@@ -3,78 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Landing Page</title>
+    <title>Delicious Restaurant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <h1>Restaurant Name</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle">
-                <span class="hamburger"></span>
-            </button>
-        </nav>
+        <h1>Delicious Restaurant</h1>
+        <p>The best culinary experience in town</p>
     </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Welcome to Our Restaurant</h2>
-            <p>Experience the finest dining with our exquisite menu and cozy atmosphere.</p>
-            <a href="#menu" class="btn">Explore Menu</a>
-        </div>
-    </section>
-
-    <section id="menu" class="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <img src="dish1.jpg" alt="Dish 1">
-                <h3>Dish 1</h3>
-                <p>Description of Dish 1.</p>
-            </div>
-            <div class="menu-item">
-                <img src="dish2.jpg" alt="Dish 2">
-                <h3>Dish 2</h3>
-                <p>Description of Dish 2.</p>
-            </div>
-            <div class="menu-item">
-                <img src="dish3.jpg" alt="Dish 3">
-                <h3>Dish 3</h3>
-                <p>Description of Dish 3.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Learn more about our restaurant's history and our commitment to quality.</p>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to Delicious Restaurant</h1>
+    </div>
+    <div class="container">
+        <section id="menu" class="menu">
+            <h2>Our Menu</h2>
+            <p>Explore our diverse and delicious menu, crafted with the freshest ingredients.</p>
+            <!-- Menu items would be listed here -->
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <img src="dish1.jpg" alt="Dish 1">
+            <img src="dish2.jpg" alt="Dish 2">
+            <img src="dish3.jpg" alt="Dish 3">
+        </section>
+        <section id="reservation" class="reservation">
+            <h2>Make a Reservation</h2>
+            <form action="reservation.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>123 Food Street, Culinary City</p>
+            <p>Email: info@deliciousrestaurant.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2024 Restaurant Name. All Rights Reserved.</p>
+        <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
