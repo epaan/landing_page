@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #ff6347;
+    background: url('header-bg.jpg') no-repeat center center/cover;
     color: white;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -36,12 +37,29 @@ h1, h2, h3 {
 }
 
 section {
-    padding: 20px;
+    padding: 60px 20px;
     text-align: center;
+}
+
+#home {
+    background: url('home-bg.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+#menu {
+    background: url('menu-bg.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+#about, #contact {
+    background-color: #fff;
 }
 
 .menu-item {
     margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
 }
 
 form {
