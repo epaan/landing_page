@@ -1,56 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Restaurant</title>
+    <title>Restoran Lezat</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Delicious Restaurant</h1>
-        <p>The best culinary experience in town</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+        <h1>Selamat Datang di Restoran Lezat</h1>
     </header>
-    <nav>
-        <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#reservation">Reservation</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="hero">
-        <h1>Welcome to Delicious Restaurant</h1>
-    </div>
-    <div class="container">
-        <section id="menu" class="menu">
-            <h2>Our Menu</h2>
-            <p>Explore our diverse and delicious menu, crafted with the freshest ingredients.</p>
-            <!-- Menu items would be listed here -->
-        </section>
-        <section id="gallery" class="gallery">
-            <h2>Gallery</h2>
-            <img src="dish1.jpg" alt="Dish 1">
-            <img src="dish2.jpg" alt="Dish 2">
-            <img src="dish3.jpg" alt="Dish 3">
-        </section>
-        <section id="reservation" class="reservation">
-            <h2>Make a Reservation</h2>
-            <form action="reservation.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="tel" name="phone" placeholder="Your Phone Number" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <p>123 Food Street, Culinary City</p>
-            <p>Email: info@deliciousrestaurant.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </div>
+
+    <section id="home">
+        <h2>Selamat Datang</h2>
+        <p>Nikmati berbagai hidangan lezat yang kami tawarkan!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu Kami</h2>
+        <div class="menu-item">
+            <h3>Nasi Goreng</h3>
+            <p>Nasi goreng khas dengan bumbu spesial.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Mie Goreng</h3>
+            <p>Mie goreng lezat dengan sayuran segar.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Sate Ayam</h3>
+            <p>Sate ayam empuk dengan bumbu kacang.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Restoran Lezat berdiri sejak tahun 2000, menyajikan makanan tradisional dengan cita rasa autentik.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <form action="#" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+        <p>&copy; 2024 Restoran Lezat. All rights reserved.</p>
     </footer>
 </body>
 </html>
