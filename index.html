@@ -3,63 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restoran Lezat</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Restoran Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .hero {
+            background: url('restaurant.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu, .about, .contact {
+            margin-bottom: 40px;
+        }
+        .menu img, .about img, .contact img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-        <h1>Selamat Datang di Restoran Lezat</h1>
+        <h1>Selamat Datang di Restoran Kami</h1>
     </header>
-
-    <section id="home">
-        <h2>Selamat Datang</h2>
-        <p>Nikmati berbagai hidangan lezat yang kami tawarkan!</p>
-    </section>
-
-    <section id="menu">
-        <h2>Menu Kami</h2>
-        <div class="menu-item">
-            <h3>Nasi Goreng</h3>
-            <p>Nasi goreng khas dengan bumbu spesial.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Mie Goreng</h3>
-            <p>Mie goreng lezat dengan sayuran segar.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Sate Ayam</h3>
-            <p>Sate ayam empuk dengan bumbu kacang.</p>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>Tentang Kami</h2>
-        <p>Restoran Lezat berdiri sejak tahun 2000, menyajikan makanan tradisional dengan cita rasa autentik.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Kontak Kami</h2>
-        <form action="#" method="post">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Pesan:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Kirim</button>
-        </form>
-    </section>
-
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <div class="hero">
+        <h1>Rasakan Kelezatan Makanan Kami</h1>
+    </div>
+    <div class="content">
+        <section id="menu" class="menu">
+            <h2>Menu Kami</h2>
+            <img src="menu.jpg" alt="Menu Restoran">
+            <p>Nikmati berbagai hidangan lezat yang kami tawarkan. Dari hidangan tradisional hingga modern, semuanya tersedia untuk memanjakan lidah Anda.</p>
+        </section>
+        <section id="about" class="about">
+            <h2>Tentang Kami</h2>
+            <img src="about.jpg" alt="Tentang Kami">
+            <p>Restoran Kami didirikan pada tahun 2000 dengan visi untuk menyajikan makanan berkualitas tinggi kepada pelanggan kami. Kami berkomitmen untuk menggunakan bahan-bahan segar dan teknik memasak terbaik.</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Kontak Kami</h2>
+            <img src="contact.jpg" alt="Kontak Kami">
+            <p>Alamat: Jalan Makan Enak No. 123, Jakarta</p>
+            <p>Telepon: (021) 123-4567</p>
+            <p>Email: info@restorankami.com</p>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2024 Restoran Lezat. All rights reserved.</p>
+        &copy; 2024 Restoran Kami. Semua Hak Dilindungi.
     </footer>
 </body>
 </html>
